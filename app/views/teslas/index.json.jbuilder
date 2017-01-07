@@ -1,0 +1,1 @@
+json.array! @teslas, partial: 'teslas/tesla', as: :tesla

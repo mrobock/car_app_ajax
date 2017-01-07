@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @tesla.year %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @tesla.model %>
+</p>
+
+<p>
+  <strong>Acceleration:</strong>
+  <%= @tesla.acceleration %>
+</p>
+
+<p>
+  <strong>Braking:</strong>
+  <%= @tesla.braking %>
+</p>
+
+<%= link_to 'Edit', edit_tesla_path(@tesla) %> |
+<%= link_to 'Back', teslas_path %>

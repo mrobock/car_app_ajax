@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tata</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Model</th>
+      <th>Acceleration</th>
+      <th>Braking</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tata.each do |tatum| %>
+      <tr>
+        <td><%= tatum.year %></td>
+        <td><%= tatum.model %></td>
+        <td><%= tatum.acceleration %></td>
+        <td><%= tatum.braking %></td>
+        <td><%= link_to 'Show', tatum %></td>
+        <td><%= link_to 'Edit', edit_tatum_path(tatum) %></td>
+        <td><%= link_to 'Destroy', tatum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tatum', new_tatum_path %>

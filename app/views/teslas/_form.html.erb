@@ -1,0 +1,33 @@
+<%= form_for(@tesla) do |f| %>
+  <% if @tesla.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tesla.errors.count, "error") %> prohibited this tesla from being saved:</h2>
+
+      <ul>
+      <% @tesla.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.number_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :acceleration %><br>
+    <%= f.number_field :acceleration %>
+  </div>
+  <div class="field">
+    <%= f.label :braking %><br>
+    <%= f.number_field :braking %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

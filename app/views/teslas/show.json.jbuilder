@@ -1,0 +1,1 @@
+json.partial! "teslas/tesla", tesla: @tesla

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @tatum.year %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @tatum.model %>
+</p>
+
+<p>
+  <strong>Acceleration:</strong>
+  <%= @tatum.acceleration %>
+</p>
+
+<p>
+  <strong>Braking:</strong>
+  <%= @tatum.braking %>
+</p>
+
+<%= link_to 'Edit', edit_tatum_path(@tatum) %> |
+<%= link_to 'Back', tata_path %>

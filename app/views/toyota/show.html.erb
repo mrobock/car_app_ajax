@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @toyotum.year %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @toyotum.model %>
+</p>
+
+<p>
+  <strong>Acceleration:</strong>
+  <%= @toyotum.acceleration %>
+</p>
+
+<p>
+  <strong>Braking:</strong>
+  <%= @toyotum.braking %>
+</p>
+
+<%= link_to 'Edit', edit_toyotum_path(@toyotum) %> |
+<%= link_to 'Back', toyota_path %>
